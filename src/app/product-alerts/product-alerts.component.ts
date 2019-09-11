@@ -12,4 +12,8 @@ export class ProductAlertsComponent implements OnInit {
   ngOnInit() {
   }
 
+  notifyMe(){
+    console.log(this.product);
+    alert(`I am notifying you about ${this.product.name} is $${this.product.price}`)
+  }
 }
